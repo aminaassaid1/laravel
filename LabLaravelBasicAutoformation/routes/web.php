@@ -26,6 +26,52 @@ Route::get('/', function () {
 
 Route ::prefix('/blog')->name('blog.')->group(function (){
     Route::get('/', function (Request $Request ) {
+
+
+            // Avec cette classe on a la possibilité d'initialiser un nouvel article en faisant:
+        // $post = new \App\Models\Post();
+        // $post->title = 'Mon troiseme article';
+        // $post->slug = 'mon-troiseme-article';
+        // $post->content='mon contenu';
+        // $post->save();
+        // return $post;
+
+
+        // $post = \App\Models\Post::all('id' , 'title');
+        // dd($post->first());
+
+        // $post = \App\Models\Post::find(1);
+        // dd($post);
+        // return $post ;
+
+
+        //     paginations
+        // $post = \App\Models\Post::paginate(1);
+        // dd($post);
+        // return $post ;
+
+        // $post = \App\Models\Post::where('id' , '>' , 0)->limit(1)->get();
+        // dd($post);
+        // return $post ;
+
+
+            // update les donneres
+        // $post = \App\Models\Post::find(1);
+        // $post-> title = "noveaux title";
+        // $post->save();
+        // return $post ;
+
+            // Delete les donneres
+        $post = \App\Models\Post::create([
+            "title" => "mon cinqueame article",
+            "slug" => " mon cinqueame article",
+            "content" => " this in mon cinquame article"
+        ]);
+
+        return $post ;
+
+
+
         return [
             "link" => \route('blog.show' , ['slug' => 'article' , 'id'=>13],)
         ];
