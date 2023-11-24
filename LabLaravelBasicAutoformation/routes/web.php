@@ -61,9 +61,13 @@ Route ::prefix('/blog')->name('blog.')->group(function (){
         // $post->save();
         // return $post ;
 
-        $post = \App\Models\Post::find(1);
-        $post-> title = "noveaux title";
-        $post->delete();
+            // Delete les donneres
+        $post = \App\Models\Post::create([
+            "title" => "mon cinqueame article",
+            "slug" => " mon cinqueame article",
+            "content" => " this in mon cinquame article"
+        ]);
+
         return $post ;
 
 
