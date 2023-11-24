@@ -63,7 +63,7 @@ Route ::prefix('/blog')->name('blog.')->group(function (){
 
         $post = \App\Models\Post::find(1);
         $post-> title = "noveaux title";
-        $post->delete();
+        $post->();
         return $post ;
 
 
