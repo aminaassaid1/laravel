@@ -30,8 +30,8 @@ Route ::prefix('/blog')->name('blog.')->group(function (){
 
             // Avec cette classe on a la possibilité d'initialiser un nouvel article en faisant:
         // $post = new \App\Models\Post();
-        // $post->title = 'Mon troiseme article';
-        // $post->slug = 'mon-troiseme-article';
+        // $post->title = 'Mon  article N 4 ';
+        // $post->slug = 'mon-troiseme-article N 4';
         // $post->content='mon contenu';
         // $post->save();
         // return $post;
@@ -61,12 +61,9 @@ Route ::prefix('/blog')->name('blog.')->group(function (){
         // $post->save();
         // return $post ;
 
-            // Delete les donneres
-        $post = \App\Models\Post::create([
-            "title" => "mon cinqueame article",
-            "slug" => " mon cinqueame article",
-            "content" => " this in mon cinquame article"
-        ]);
+            // Create les donneres
+        $post = \App\Models\Post::create($Request->all());
+
 
         return $post ;
 
