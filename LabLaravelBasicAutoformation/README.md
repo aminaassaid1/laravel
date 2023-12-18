@@ -1,66 +1,59 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# autoformation_laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Qu'est ce que Laravel ?
 
-## About Laravel
+Un framework est un ensemble de classes préconçues qui vont vous permettre de faire des tâches traditionnelles plus rapidement et plus simplement (vous allez avoir des classes pour communiquer avec la base de données, valider les données, gérer les URL...). Tout ça sera déjà inclus pour vous et organisé d'une certaine manière pour vous rendre le plus productif possible et pour que vous puissiez vous focaliser sur ce qui vous intéresse, la logique métier de votre application.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Laravel est un framework qui suit la structure MVC (pour Model View Controller), qui est une manière d'organiser le code qui est très répandue et que l'on retrouve sur la plupart des frameworks modernes aujourd'hui. Aussi, ce que vous allez apprendre avec Laravel sera aussi valable pour d'autres frameworks.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Cette formation sera consacrée à la version 10 de Laravel (la version la plus récente à l'heure à laquelle j'enregistre cette formation) et nécessite PHP 8.1.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Programme de la auto formation 
 
-## Learning Laravel
+Dans un premier temps nous allons faire un petit tour d'horizon du framework, on commencera par l'installer puis on analysera la structure des dossiers et les composants de bases qui constitue le MVC. Nous découvrirons notamment le Routing, les Controller, l'ORM Eloquent et le moteur de template blade.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+On plongera ensuite un peu plus en profondeur sur certaines fonctionnalités au travers d'une mise en pratique avec la création d'un blog. Cela sera l'occasion de découvrir comment gérer les formulaire efficacement et gérer la relation entre les données.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Ensuite, on approfondira certains éléments et on essaiera de comprendre comment fonctionne le framework en interne. On découvrira le cycle de vie qui permet à Laravel de comprendre une requête et de la transformer en réponse.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Enfin, on finira avec des travaux pratiques avec un exemple concret de mise en place de Laravel pour un projet spécifique.
 
-## Laravel Sponsors
+## Prérequis 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Pour bien suivre cette formation il y a quelques prérequis. Le premier c'est d'être bien à l'aise avec PHP, comprendre les bases du langage et la programmation orientée objet. Je ne reviendrai pas sur le principe de classe, d'instance, les notions de public, protégé et privé. Il est impératif que tout ça soit acquis sinon vous risquez d'avoir du mal à suivre les explications.
 
-### Premium Partners
+Ensuite, il faut aussi savoir utiliser le terminal. Il n'est pas nécessaire d'être un expert mais beaucoup d'opérations dans Laravel se font au travers du terminal (comme pour démarrer un serveur ou générer du code) donc il faut que vous ayez un petit peu d'expérience avec ça.
+Il faudra aussi savoir utiliser Composer car c'est ce qui va nous permettre de créer notre projet Laravel mais aussi d'installer différentes extensions lorsqu'on en aura besoin.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Et enfin, il faut aussi comprendre SQL. Même si vous n'avez pas besoin d'être un expert, comprendre le fonctionnement de base (surtout la notion de clé étrangère et de relation) est essentiel. Cela vous permettra d'avancer un petit peu plus vite dans cette formation. Si vous ne savez pas du tout ce qu'est SQL, je vous invite à regarder ma formation sur le sujet.
 
-## Contributing
+Si vous avez ces prérequis et que vous êtes motivé je vous donne rendez-vous dans le premier chapitre où on va installer Laravel et on va découvrir la structure des dossiers.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+## les chapitre de formation :
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. structure des dossiers
+1. Routine
+1. Lorm Éloquent
+1. Controllers
+1. Blade
+1. Valider les données
+1. Model binding
+1. Debugdar et IDE héler
+1. Formulaires
+1. Relation
+1. Authentification
+1. Système de fichiers
+1. Éloquent Accesseurs et mutateurs
+1. Éloquent : seed et factory
+1. front-end avec vite
+1. laravel bronze
+1. les policy
+1. le service provider
+1. internationalistion
+1. Tester avec laravel
+1. Hébergement et déploiement
+1. héberger sur un mutualisé via SSH (infomaniak)
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## sources :
+[Grafikart.fr](https://grafikart.fr/formations/laravel)
